@@ -1,35 +1,8 @@
 <!DOCTYPE html><html><head>
         <meta charset="utf-8">
-        <title>It's RUSTY!!</title>
-        <link rel="stylesheet" href="/style-b9a92285bb094aff.css">
+        <title>Is this even changing lol</title>
+        <link rel="stylesheet" href="/style-f9de307faeb593f9.css">
     
-<link rel="preload" href="/RustFrontEnd-a7554799113b4ef9_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/RustFrontEnd-a7554799113b4ef9.js"></head>
-<body><script type="module">import init from '/RustFrontEnd-a7554799113b4ef9.js';init('/RustFrontEnd-a7554799113b4ef9_bg.wasm');</script><script>(function () {
-    var protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-    var url = protocol + '//' + window.location.host + '/_trunk/ws';
-    var poll_interval = 5000;
-    var reload_upon_connect = () => {
-        window.setTimeout(
-            () => {
-                // when we successfully reconnect, we'll force a
-                // reload (since we presumably lost connection to
-                // trunk due to it being killed, so it will have
-                // rebuilt on restart)
-                var ws = new WebSocket(url);
-                ws.onopen = () => window.location.reload();
-                ws.onclose = reload_upon_connect;
-            },
-            poll_interval);
-    };
-
-    var ws = new WebSocket(url);
-    ws.onmessage = (ev) => {
-        const msg = JSON.parse(ev.data);
-        if (msg.reload) {
-            window.location.reload();
-        }
-    };
-    ws.onclose = reload_upon_connect;
-})()
-</script></body></html>
+<link rel="preload" href="/RustFrontEnd-fec276cd04397026_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/RustFrontEnd-fec276cd04397026.js"></head>
+<body><script type="module">import init from '/RustFrontEnd-fec276cd04397026.js';init('/RustFrontEnd-fec276cd04397026_bg.wasm');</script></body></html>
